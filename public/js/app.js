@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit', (e) => {
     const location = search.value
     messageOne.textContent = 'Loading...'
     secondOne.textContent = ''
-    fetch(`http://localhost:3000/weather?address=${location}`) // client side java script not shown in node js 
+    fetch(`https://tiny-red-zebra-wrap.cyclic.app/weather?address=${location}`) // client side java script not shown in node js 
         .then((response => {
             response.json().then((data) => {
 
